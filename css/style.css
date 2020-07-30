@@ -1,14 +1,64 @@
 /* 
-
-Project Name: Cookie Monster 
-Client: Cookie Monster
-Author: Chris Castiglione | www.twitter.com/castig | www.castig.org 
-Developed @ One Month in NYC 
-
+Project Name: Monthly Resolutions
+Client: One Month
+Author: Christopher Castig | @castig
 */
 
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+.link {
+	color: #E8503B;
+	text-decoration: none
+}
+
+.lines {
+	height:1px;
+	border-width:0;
+	color:gray;
+	background-color:gray
+}
+
+#avatar {
+	border-radius: 50%
+}
+
+.alignleft {
+	float:left;
+	margin:0 15px 15px 0;
+}
+
+.image_main {
+	width:90%;
+}
+
+h1{
+	margin-bottom:0;
+}
+
+.p1 {
+	margin-top: 0
+}
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+
 body {
-	background: url('../images/cookie-monster.jpg');
+	background: #ECECEC;
 	/* the follow is the code to have the image display as a full page */
 	background-position: center;
 	background-attachment: fixed;
@@ -19,24 +69,41 @@ body {
 }
 
 #container {
-	background: black;
-	width: 424px;
-	color: white;
-	padding: 15px;
-}
-
-h1 {
-	font-size: 80px;
-}
-
-h2 {
-	background: #6EB9EB;
+	background: url('../images/notebook.png');
+	margin: 0 auto 0 auto;
+	width: 1000px;
 	color: black;
-	padding:5px;
-	border-radius: 5px
+	padding: 15px;
+	font-family: 'Lato', sans-serif;
 }
 
-a {
-	color:#75C1F6;
-	text-decoration: none;
+#header{
+
 }
+
+#main{
+	background:white;
+	padding:15px;
+	width:650px;
+	float: left;
+
+}
+
+#sidebar{
+	background:white;
+	padding:15px;
+	width:300px;
+	float: left;
+	margin-left: 20px
+
+}
+
+#footer{
+
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+
