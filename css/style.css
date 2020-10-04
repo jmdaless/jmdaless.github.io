@@ -1,109 +1,304 @@
-/* 
-Project Name: Monthly Resolutions
-Client: One Month
-Author: Christopher Castig | @castig
+/*
+ * General/Utility Styles
 */
 
-
-/*----------------------------------------------------------------------------- 
-01=BASE   
------------------------------------------------------------------------------*/
-
-/* Box Model Hack */
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
 
-.clear {
-	clear: both;
-}
 
-.link {
-	color: #E8503B;
-	text-decoration: none
-}
-
-.lines {
-	height:1px;
-	border-width:0;
-	color:gray;
-	background-color:gray
-}
-
-#avatar {
-	border-radius: 50%
-}
-
-.alignleft {
-	float:left;
-	margin:0 15px 15px 0;
-}
-
-.image_main {
-	width:90%;
-}
-
-h1{
-	margin-bottom:0;
-}
-
-.p1 {
-	margin-top: 0
-}
-
-/*----------------------------------------------------------------------------- 
-02=LAYOUT  
------------------------------------------------------------------------------*/
 
 body {
-	background: #ECECEC;
-	/* the follow is the code to have the image display as a full page */
-	background-position: center;
-	background-attachment: fixed;
-	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  margin: 0;
+  background:#28283C;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
 }
 
-#container {
-	background: url('../images/notebook.png');
-	margin: 0 auto 0 auto;
-	width: 1000px;
-	color: black;
-	padding: 15px;
-	font-family: 'Lato', sans-serif;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#header{
-
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
 }
 
-#main{
-	background:white;
-	padding:15px;
-	width:650px;
-	float: left;
-
+strong {
+  font-weight: 600;
 }
 
-#sidebar{
-	background:white;
-	padding:15px;
-	width:300px;
-	float: left;
-	margin-left: 20px
 
+/*
+ * Button styles
+*/
+
+.button {
+  background: #FA6D2B;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
 }
 
-#footer{
 
+/*
+ * Heading 
+*/
+
+h1 {
+  font-size: 1.375rem; /* 22px / 16px */
+  color: #666A6C;
 }
 
-/*----------------------------------------------------------------------------- 
-03=MAIN  
------------------------------------------------------------------------------*/
+
+
+/*
+ * Header and .hero Styles
+*/
+
+header {
+  background: #FFF;
+}
+
+header .logo {
+  border-right: 0px solid #DCE0E0;
+  padding: 1rem 0 1.25rem 0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+
+
+/*
+ * Info
+*/
+
+.info {
+  background: #FFF;
+  text-align: center;
+  padding: 1.5625rem; /* 25px / 16px */
+}
+
+.info h1 {
+  margin-bottom: .3125rem; /* 5px / 16px */
+}
+
+.info .profile {
+  margin-bottom: 1.5rem; /* 24px / 16px */
+}
+
+.info .owner-details img {
+  border-radius: 50%;
+  margin-bottom: .375rem; /* 6px / 16px */
+}
+.info h2.relationship, .info h2.name {
+  color: #909597;
+  margin-bottom:.1875rem; /* 3px / 16px */
+}
+
+.info h2.name {
+  font-weight: bold;
+}
+
+.info p.location {
+  margin-bottom: 1.25rem; /* 20px / 16px */
+}
+
+.info .icon {
+  float: left;
+  width: 33.3%;
+}
+
+.info .icon img {
+  height: 30px;
+  margin-bottom: .1875rem; /* 3px / 16px */
+}
+
+.info .booking h2 {
+  font-weight: 600;
+  font-size: 1.375rem; /* 22px / 16px */
+  margin-bottom: .8125rem; /* 3px / 16px */
+}
+
+.info h2.price time {
+  font-size: 1rem; /* 16px / 16px */
+}
+
+
+/*
+ * Details styles
+*/
+
+.details {
+  padding: 1.25rem;
+}
+
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+
+.details h4 {
+  margin-bottom: 0.625rem;
+}
+
+.details li {
+  margin-bottom: 0.3125rem;
+}
+
+.details section {
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 1rem 0 1.25rem 0;
+}
+
+.details .about {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.details .about p {
+  text-align: left;
+}
+
+.details .about a.contact {
+  margin: 0.9375rem 0; /* 15px / 16px */
+  display: block;
+}
+
+.details .photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+
+@media only screen and (min-width: 1060px) {
+
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .button {
+    width: 275px;
+    margin: auto;
+  }
+
+  .info h1 {
+    margin-bottom: .6875rem;
+  }
+
+  .info h2 {
+    margin-bottom: .1875rem; /* 3px / 16px */
+  }
+
+  .info .profile {
+    width: 660px;
+    border-right: 1px solid #DCE0E0;
+  }
+
+  .info .booking {
+    width: 380px;
+  }
+
+  .info .owner-details {
+    width: 20%;
+  }
+
+  .info .pet-details {
+    width: 80%;
+    text-align: left;
+  }
+
+  .info .pet-details .icon {
+    width: inherit;
+    margin-right: 50px;
+  }
+
+  .info .pet-details .icon img {
+    display: block;
+    margin: .1875rem auto .1875rem; /* 3px / 16px */
+  }
+
+
+  /*
+   * .details styles
+  */
+
+  .details .main {
+    width: 690px;
+  }
+
+  .details h4 {
+    width: 46px;
+  }
+
+  .details .about {
+    text-align: left;
+  }
+
+  .details .care .column, .details .games .column {
+    margin-right: 5.9rem;
+  }
+
+  .details .games li img {
+    padding-right: 0.5rem;
+  }
+
+  /*
+   * photo styles
+  */
+
+  .details .photos {
+    text-align: center;
+  }
+
+  .details .photos img {
+    display: inline;
+    width: 200px;
+    margin: 0 0.85rem;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
